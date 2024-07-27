@@ -39,7 +39,7 @@ const AboutMe = {
     ],
 
     profile_summary: `
-        Aspiring Machine Learning Engineer passionate with data analysis and
+        I am an Aspiring Machine Learning Engineer passionate with data analysis and
         AI development. I am also flexible in Web and Mobile App Development 
         eager to contribute to a dynamic and challenging working environment.
     `,
