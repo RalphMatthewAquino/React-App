@@ -1,0 +1,128 @@
+.bantaykape-header {
+    flex-direction: column;
+    margin: 0;
+    background: url('../assets/coffee.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bantaykape-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    border-bottom: 1px solid rgba(75, 78, 76, 0.2);
+    box-shadow: 1px 1px 5px rgba(75, 78, 76, 0.5);
+}
+
+.bantaykape-img {
+    position:relative;
+    right:15%;
+    width: 50%;
+    filter: drop-shadow(2px 2px 20px #738738)
+}
+
+.bantaykape-nav-list {
+    position:relative;
+    left:30%;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    list-style:none;
+}
+
+.bantaykape-navigation-button {
+    color:#144600;
+    font-size: 9pt;
+    font-family: Poppins;
+    width:100%;
+    background-color: transparent;
+    border:none;
+     /* Translucent grey border */
+    border-radius: 30px;
+    padding:8px;
+    transition: 0.5s ease-out;
+}
+.bantaykape-navigation-button-text {
+    font-weight: 100;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.bantaykape-navigation-button:hover {
+    box-shadow: 1px 1px 5px rgba(46, 48, 47, 0.5);
+    border-radius: 30px;
+    transition: 0.3s ease-in;
+    cursor: pointer; /* Added cursor pointer for better UX */
+}
+
+.bantaykape-intro-section-container {
+    color:#144600;
+    text-align:center;
+    padding: 10%
+}
+
+.bantaykape-intro {
+    font-size: 5vw;
+    line-height: 0.5;
+}
+.bantaykape-intro-title {
+    font-size: 1.5vw;
+    
+}
+
+.bantaykape-intro-section-button {
+    color:#144600;
+    background-color: white;
+    margin-top: 2%;
+    font-family: Poppins;
+    width:auto;
+    border: 0.5px solid rgba(128, 128, 128, 0.5); /* Translucent grey border */
+    border-radius: 30px;
+    padding: 10px;
+    transition: 0.4s ease-out;
+    cursor: pointer; /* Added cursor pointer for better UX */
+}
+.bantaykape-intro-section-button-text {
+    font-weight: 100;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    padding-left:10px;
+    padding-right:10px;
+    align-items: center;
+    gap: 15px; /* Adjust the gap between the icons */
+}
+
+.google-play-store-icon {
+    width:20px;
+    height:20px;
+}
+
+.bantaykape-intro-section-button:hover {
+    background-color: #144600;
+    color:white;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.6);
+    border-radius: 30px;
+    transition: 0.3s ease-in;
+    cursor: pointer; /* Added cursor pointer for better UX */
+}
+
+
+
+/*
+
+#144600: rgba(20, 70, 0, 1.0)
+#B1976E: rgba(177, 151, 110, 1.0)
+#738738: rgba(115, 135, 56, 1.0)
+#3F252C: rgba(63, 37, 44, 1.0)
+#241D2A: rgba(36, 29, 42, 1.0)
+
+<color name="feedbackHelperColor">#144600</color>
+    <color name="colorCombination_1">#B1976E</color>
+    <color name="colorCombination_2">#738738</color>
+    <color name="colorCombination_3">#3F252C</color>
+    <color name="colorCombination_4">#241D2A</color>
+
+*/

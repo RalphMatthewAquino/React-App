@@ -6,6 +6,8 @@ import AirBnBMain from './AirBnBClone/AirBnBMain'
 
 import Portfolio from './Portfolio/Main'
 
+import BantayKapeMain from './BantayKape/BantayKapeMain'
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <>
@@ -18,7 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           
       {/*<AirBnBMain />*/}
 
-      <Portfolio />
+      <BantayKapeMain />
 
       
     </>
