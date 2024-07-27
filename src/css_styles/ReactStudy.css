@@ -1,0 +1,167 @@
+.reason-list-container {
+    color:white;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.reason-list-container ol li {
+    padding: 5px;
+}
+
+.react-study-logo-container {
+    padding: 20px;
+    margin-top: 150px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.react-study-page-title {
+    text-align: start;
+    font-size: 3rem;
+    color: white;
+    transition: filter 0.5s ease-out, transform 0.5s ease-out;
+    /*white*/
+}
+
+.react-study-page-title:hover {
+    color: rgb(26, 184, 237);
+    transition: 0.5s ease;
+    cursor:pointer;
+    filter: drop-shadow(1px 1px 5px rgb(26, 184, 237));
+    /*white*/
+}
+
+.vite-study-logo {
+    width: 150px;
+    margin-left: 50px;
+    /*animation: rotate 10s linear infinite;*/
+    transition: filter 0.5s ease-out, transform 0.5s ease-out; /* Applies transition for both hover and non-hover states */
+}
+
+.react-study-logo {
+    width: 150px;
+    animation: rotate 10s linear infinite;
+    filter: brightness(0) saturate(100%) invert(26%) sepia(75%) saturate(667%) hue-rotate(153deg) brightness(200%) contrast(100%);
+    transition: filter 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.react-study-logo:hover {
+    filter: brightness(0) saturate(100%) invert(26%) sepia(75%) saturate(667%) hue-rotate(153deg) brightness(200%) contrast(100%) drop-shadow(1px 1px 10px rgb(26, 184, 237));
+    cursor: pointer;
+    transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+.vite-study-logo:hover {
+    transition: 0.5s ease;
+    filter: drop-shadow(1px 1px 10px rgb(175, 97, 231));
+    cursor:pointer;
+}
+
+
+/*Styling for navigation*/
+.nav {
+    position: fixed;
+    left: 0;
+    top: 0; /* Add top to fix it at the top of the page */
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(26, 184, 237); /* Base border color */
+    width: 100%; /* Make the navigation span full width */
+    margin: 0; /* Remove any margins */
+    padding: 0; /* Remove any padding */
+    box-shadow: 0 4px 4px rgba(255, 255, 255, 0.2); /* Add box shadow for a subtle effect */
+}
+
+
+
+.react-study-title {
+    color:white;
+    margin-left: 20px;
+    transition: filter 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.react-study-title a {
+    text-decoration: none;
+    color:inherit;
+}
+
+.react-study-title:hover{
+    color: rgb(26, 184, 237);
+    transition: ease 0.5s;
+    cursor:pointer;
+    filter: drop-shadow(1px 1px 10px rgb(26, 184, 237));
+}
+
+.nav-links-container {
+    align-items: center;
+    padding:25px;
+}
+
+.nav-header {
+    align-items: center;
+}
+
+.nav-links {
+    display:flex;
+}
+
+.nav-links li {
+    margin-left: 10px;
+    list-style-type: none;
+    color:white;
+
+    transition: 0.5s ease-out; /* Applies transition for both hover and non-hover states */
+}
+
+.nav-links li:hover {
+    color: rgb(26, 184, 237);
+    transition: 0.5s ease;
+    cursor:pointer;
+}
+
+.nav-header {
+    display:flex;
+    margin-left: 20px;
+}
+
+.nav-header img {
+    width: 60px;
+    animation: rotate 5s linear infinite;
+
+    transition: filter 0.5s ease-out, transform 0.5s ease-out; /* Applies transition for both hover and non-hover states */
+    
+}
+
+.nav-header img:hover {
+    transition: 0.5s ease;
+    filter: drop-shadow(1px 1px 10px rgb(26, 184, 237));
+    cursor:pointer;
+}
+.nav-header h1 {
+    margin-left: 10px;
+    font-size: 2rem;;
+}
+
+
+/* Styling for footer */
+.react-study-footer {
+    color: white;
+    position: fixed; /* Fixes the footer to the bottom */
+    bottom: 0; /* Aligns the footer to the bottom */
+    left: 0; /* Aligns the footer to the left */
+    padding: 15px;
+    width: 100%; /* Optional: makes the footer span the full width */
+    text-align: left; /* Aligns text to the left */
+    background-color: rgb(26, 184, 237);
+}
+.react-study-footer small{
+    font-size: 15px;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

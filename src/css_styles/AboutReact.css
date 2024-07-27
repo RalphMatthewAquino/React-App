@@ -1,0 +1,87 @@
+.about-react-nav {
+    display:flex;
+    color:white;
+    position:fixed;
+    left: 0;
+    top: 0;
+    width:100%;
+    justify-content: space-between;
+    background-color: rgb(20, 19, 19);
+    align-items:center;
+
+}
+
+.about-react-header {
+    display:flex;
+    gap:10px;
+    padding:10px;
+}
+
+.about-react-header h1 {
+    color:aqua
+}
+
+.about-react-header img {
+    width: 50px;
+    padding-left: 10px;
+}
+
+.about-react-nav-items {
+    display: flex;
+    padding:10px;
+}
+
+.react-proj-nav-item {
+    color: white;
+    font-weight: 100;
+    font-size: 14pt;
+    transition: background-color 0.3s ease;
+}
+
+.about-react-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(20, 19, 19);
+    padding: 10px;
+    text-align: center;
+}
+
+.react-footer-title {
+    color: white;
+    font-size: 10pt;
+}
+
+.react-facts-body-container {
+    margin-top: 150px;
+    padding-left: 10px;
+}
+
+.react-facts-body-container h1 {
+    color:white
+}
+
+.react-facts-body-container ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 50px; /* Add padding to make space for custom bullets */
+}
+
+.react-facts-body-container ul > li {
+    padding: 10px;
+    color:white;
+    font-size: 15pt;
+    position: relative; /* Make the list item the reference point for positioning */
+}
+
+.react-facts-body-container ul > li::before {
+    content: '•'; /* Use bullet character */
+    color: aqua; /* Change to your desired color */
+    font-size: 35px; /* Adjust the size of the bullet */
+    position: absolute; /* Position it absolutely */
+    left: -25px; /* Adjust according to padding-left */
+    top: 50%; /* Vertically center the bullet */
+    transform: translateY(-50%); /* Vertically center the bullet */
+}
+
+
+

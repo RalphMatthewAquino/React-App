@@ -1,0 +1,316 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.airbnb-header {
+    padding: 1%;
+    border-bottom: 0px solid grey;
+    box-shadow: 0px 0px 10px grey;
+    width: 100%;
+}
+
+.airbnb-navbar {
+    justify-content: space-between;
+    display:flex;
+    align-items:center;
+    position: relative; /* Make it a positioning context */
+}
+
+.airbnb-button-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.airbnb-logo{
+    padding: 10px;
+    width:8%;
+    filter: drop-shadow(0px 0px 0.5px rgb(234, 36, 36));
+}
+
+.airbnb-utility-container {
+    align-items:center;
+    display:flex;
+    margin-right: 3%;
+}
+
+/*Aibnb Search Bar Custom Styles*/
+
+.search-bar {
+    width:75%;
+    margin-top: 3%;
+    margin-left: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    overflow: hidden;
+}
+
+.search-item {
+    flex: 1;
+    width:auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+    
+    transition: 0.2s ease-out;
+}
+
+.search-item:hover {
+    cursor:pointer;
+    background-color: rgba(149, 145, 145, 0.2);
+    border-radius: 30px;
+    transition: 0.2s ease-in;
+}
+.search-item label {
+    display: block;
+    font-weight: bold;
+    color:rgb(75, 72, 72);
+    margin-bottom: 5px;
+}
+
+.search-item input {
+    font-size:12pt;
+    font-family:Poppins;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: inherit; /* Inherit text color from parent */
+}
+
+.divider {
+    height: 40px;
+    width: 1px;
+    background-color: #e0e0e0;
+    margin: 0 10px;
+}
+
+.inputs {
+    font-family:Poppins;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: inherit; /* Inherit text color from parent */
+}
+
+.search-item:last-child{
+    align-items:center;
+    width:auto;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+    display:flex;
+    transition: 0.2s ease-out;
+}
+.search-button {
+    position:relative;
+    left:6%;
+    background-color: #ff5a5f;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-button i {
+    font-size: 16px;
+}
+
+.search-button:hover {
+    background-color: #e04a4d;
+}
+/* */
+
+
+
+.airbnb-stays-button,
+.airbnb-experiences-button {
+    color:gray;
+    font-size:13pt;
+    border:none;
+    font-family: Poppins;
+    border-radius: 30px;
+    background-color: white;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    width: auto;
+    margin-right: 5px;
+    margin-left: 5px;
+    transition: 0.2s ease-out;
+}
+
+.airbnb-stays-button:hover,
+.airbnb-experiences-button:hover,
+.airbnb-your-home-button:hover,
+.airbnb-world-icon-button:hover  {
+    color:black;
+    cursor:pointer;
+    background-color: rgba(158, 152, 152, 0.2);
+    border-radius: 30px;
+    transition: 0.2s ease-in;
+}
+.airbnb-your-home-button {
+    color:black;
+    font-size:11pt;
+    border:none;
+    font-family: Poppins;
+    border-radius: 30px;
+    background-color: white;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    width: auto;
+    margin-right: 5px;
+    margin-left: 5px;
+    transition: 0.2s ease-out;
+}
+.airbnb-world-icon-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:auto;
+    border: none;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    transition: 0.2s ease-out;
+    cursor: pointer; /* Added cursor pointer for better UX */
+}
+
+.world-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adjust the gap between the icons */
+}
+
+.airbnb-user-icon-button {
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:auto;
+    border: 0.5px solid rgba(128, 128, 128, 0.5); /* Translucent grey border */
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    transition: 0.4s ease-out;
+    cursor: pointer; /* Added cursor pointer for better UX */
+}
+.user-icon-container {
+    display: flex;
+    justify-content: center;
+    padding-left:10px;
+    padding-right:10px;
+    align-items: center;
+    gap: 15px; /* Adjust the gap between the icons */
+}
+
+.airbnb-user-icon-button:hover {
+    box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.5), -1px 1px 3px rgba(128, 128, 128, 0.5), 1px 1px 3px rgba(128, 128, 128, 0.5);
+    cursor:pointer;
+    border-radius: 30px;
+    transition: 0.2s ease-in;
+}
+
+
+
+.airbnb-disp-image-container {
+    text-align:start;;
+    margin-top: 7%;
+}
+
+.airbnb-disp-image {
+    width: 120%; /* Set the desired width of the image */
+    max-width: 1000px; /* Optional: set a maximum width for the image */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+}
+.airbnb-description-container {
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.airbnb-desc-title {
+    font-size: 40pt;
+    line-height: 0.5;
+}
+.airbnb-description {
+    font-size: 20pt;
+}
+
+.hero-list-container {
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 3%;
+}
+
+/* Profile Styles */
+
+.hero-image {
+    border-radius: 15px;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px; /* Adjust the gap as needed */
+    justify-content: center; /* Center the grid */
+}
+
+.profile-card {
+    width:auto; 
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1); /* Optional: Box shadow */
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px; /* Add some padding to ensure content is not too close to the edges */
+    background-color: white; /* Optional: Background color */
+    transition: 0.3s ease-out;
+}
+
+.profile-stat-container {
+    line-height: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.star-rating-icon {
+    display: inline-block;
+}
+
+.program-description,
+.program-price-desc {
+    margin: 10px 0; /* Adjust the margin as needed */
+}
+
+.profile-card:hover {
+    background-color: rgba(194, 189, 189, 0.5);
+    cursor:pointer;
+    transition: 0.3s ease-in;
+    
+}
+

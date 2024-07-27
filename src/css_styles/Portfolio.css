@@ -1,0 +1,329 @@
+.main-section {
+    background-repeat: no-repeat;
+    background-image: url('../assets/react-bg-4.png');
+    background-size:auto; /* Ensures the image covers the entire width and height of the element */
+}
+.profile-header {
+    flex-direction: column;
+    margin: 0;
+}
+
+ 
+ .portfolio-nav {
+    color:white;
+    padding:1%;
+    display: flex;
+    align-items:center;
+    border-bottom: 0px solid grey;
+    box-shadow: 0px 0px 10px grey;
+    justify-content:space-between;
+}
+.brand-container {
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-left:3.5%;
+}
+.portfolio-logo {
+    width: 10%;
+    border-radius: 60%;
+    padding:10px;
+}
+
+.nav-items {
+    gap:1vw;
+    list-style:none;
+    display:flex;
+    align-items: center;
+}
+
+.nav-items > li {
+    text-align:center;
+    padding:15px;
+    border-radius: 30px;
+    font-size: 1.5vh;
+    transition: 0.5s ease-out;
+}
+
+.nav-items > li:hover {
+    cursor:pointer;
+    border-radius: 30px;
+    transition: 0.4s ease-in;
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.5), -1px 1px 10px rgba(128, 128, 128, 0.5), 1px 1px 10px rgba(128, 128, 128, 0.5);
+}
+
+.social-links{
+    gap:0.5vw;
+    list-style:none;
+    display:flex;
+    align-items: center;
+}
+
+.social-links > li {
+    transition: 0.4s ease-out;
+}
+
+.facebook:hover,
+.instagram:hover,
+.linkedin:hover,
+.github:hover {
+    transform: scale(1.1);
+    transition: 0.4s ease-in;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    filter: drop-shadow(1px 1px 8px white);
+}
+
+.facebook:hover {
+    filter: drop-shadow(1px 1px 8px #3b5998)
+}
+.instagram:hover {
+    filter: drop-shadow(1px 1px 8px #d62976)
+}
+.linkedin:hover {
+    filter: drop-shadow(1px 1px 8px #0077b5)
+}
+
+.github:hover {
+    filter: drop-shadow(1px 1px 8px white)
+}
+
+.profile-section-container {
+    width: 100%;
+    padding: 0.5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+.profile-section-photo {
+    border-radius: 30px;
+    width: 25%;
+    padding:20px;
+    margin-right: 3.5%;
+    height: auto; /* Adjust based on your needs */
+}
+
+.profile-section-content {
+    text-align: left;
+    color: white;
+    padding: 6%;
+    font-size: 15pt;
+    animation: fadeIn 3s ease-in-out;
+    /* Optional: adds a semi-transparent background for better text readability */
+}
+
+.profile-section-container h1 {
+    filter:drop-shadow(8px 8px 5px #ff7e5f);
+    font-size: 5vw; /* Adjust the value as needed */
+    line-height: 1; /* Adjust line-height to make it look better */
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.profile-description, .profile-intro {
+    font-size: 1.5vw;
+}
+
+
+.profile-projects-button {
+    font-family: Poppins;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:auto;
+    background-color: transparent;
+    border: 0.5px solid rgba(128, 128, 128, 0.5); /* Translucent grey border */
+    border-radius: 30px;
+    padding: 10px;
+    transition: 0.4s ease-out;
+    cursor: pointer; /* Added cursor pointer for better UX */
+}
+.profile-button-icons {
+    font-weight: 100;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    padding-left:10px;
+    padding-right:10px;
+    align-items: center;
+    gap: 15px; /* Adjust the gap between the icons */
+}
+
+.project-arrow-icon {
+    font-size: 1vw;
+    transform:scaleX(-1);
+}
+
+.profile-projects-button:hover {
+    cursor:pointer;
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.5), -1px 1px 10px rgba(128, 128, 128, 0.5), 1px 1px 10px rgba(128, 128, 128, 0.5);
+}
+
+.tech-stack-section-title, 
+.project-section-title,
+.education-section-title {
+    font-size: 2vw;
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Container for the tech stack section */
+.tech-stack-section-container,
+.projects-section-container, 
+.education-section-container {
+    cursor:pointer;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+}
+
+/* Styling for each tech stack item */
+.tech-stack-item,
+.project-item,
+.educ-item {
+    background-color: #fff; /* Card background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Hide overflow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Image styling */
+.tech-logo,
+.project-logo,
+.school-logo {
+    width: 80px; /* Adjust width as needed */
+    height: 80px; /* Adjust height as needed */
+    object-fit: contain; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space below the image */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transitions */
+}
+
+/* Heading styling */
+.tech-name,
+.project-name,
+.school-name {
+    font-size: 1.25rem; /* Font size for the tech name */
+    margin: 10px 0; /* Space above and below */
+    color: #333; /* Dark text color */
+}
+
+/* Description styling */
+.tech-desc,
+.project-desc,
+.year-graduated{
+    word-spacing: 0px;
+    text-align:center;
+    font-size: 0.875rem; /* Font size for the description */
+    color: #666; /* Lighter text color */
+}
+
+/* Hover effects for the card */
+.tech-stack-item:hover,
+.project-item:hover,
+.educ-item:hover{
+    transform: translateY(-10px); /* Lift card up */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Animations for specific logos */
+.project-logo.bani-water-refilling-station-sales-and-delivery-system {
+    filter: brightness(0) saturate(100%) invert(26%) sepia(75%) saturate(667%) hue-rotate(153deg) brightness(200%) contrast(100%) drop-shadow(1px 1px 5px rgb(2, 148, 252));
+}
+.tech-logo.react {
+    filter: brightness(0) saturate(100%) invert(26%) sepia(75%) saturate(667%) hue-rotate(153deg) brightness(200%) contrast(100%) drop-shadow(1px 1px 5px rgb(2, 148, 252));
+    animation: rotate 15s linear infinite; /* Apply rotation animation */
+}
+
+.tech-logo.python  {
+    filter:drop-shadow(1px 1px 5px rgb(15, 85, 225));
+}
+.tech-logo.bootstrap {
+    filter:drop-shadow(1px 1px 5px rgb(39, 4, 48));
+}
+    
+.tech-logo.javascript {
+    filter:drop-shadow(1px 1px 5px rgb(233, 222, 7));
+}
+.tech-logo.java  {
+    filter:drop-shadow(1px 1px 5px rgb(152, 9, 52));
+}
+.tech-logo.vite {
+    filter:drop-shadow(1px 1px 5px rgb(140, 32, 167));
+}
+
+.copyright-container {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align:center;
+    justify-content:center;
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+    box-shadow: 0px 0px 0px rgba(128, 128, 128, 0.5), -1px 1px 10px rgba(128, 128, 128, 0.5), 1px 1px 10px rgba(128, 128, 128, 0.5);
+}
+
+footer {
+    margin-top: 2%;
+}
+
+.social-links-list {
+    display:flex;
+    gap: 5px;
+    align-items:center;
+    list-style: none;
+    margin-right:20px;
+}
+.copyright {
+    margin-left: 20px;
+}
+
+
+/* Keyframes for animations */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Define the fade-in keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.divider {
+    width: 98%;
+    position:relative;
+    left: 0.5%;
+    height: 0;
+    justify-content: center;
+    margin-top: 2%;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+

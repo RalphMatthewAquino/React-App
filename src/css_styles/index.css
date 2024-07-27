@@ -1,0 +1,13 @@
+/* Import the Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  font-family: Poppins;
+}
+
+body {
+  /*background-image: url("../assets/react-bg-4.png");
+  background-repeat: no-repeat;
+  background-position-y: 15%;
+  background-position-x: 20%;*/
+}
