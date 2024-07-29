@@ -1,11 +1,15 @@
 import React from 'react';
 import BantayKapeLogo from '../assets/bantaykape-logo.png';
+import BantayKapeDescriptionLogo from '../assets/bantaykape.png';
 import { FaPhone, FaUserFriends, FaDownload, FaQuestionCircle } from 'react-icons/fa';
 
 
 const BantayKapeInfo = {
     title: 'BantayKape',
-    logo: BantayKapeLogo,
+    logo: [
+        BantayKapeLogo,
+        BantayKapeDescriptionLogo
+    ],
     titleIntroduction: 'Leading Android mobile application for safeguarding coffee crops',
     nav_items: [
         {

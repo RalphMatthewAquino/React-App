@@ -4,11 +4,15 @@ import BantayKapeHeader from './Header';
 
 import BantayKapeIntroSection from './IntroSection';
 
+import DescriptionSection from './DescriptionSection';
+
 const BantayKapeMain = () => {
     return (
         <>
             <div>
                 <BantayKapeHeader />
+
+                <DescriptionSection />
             </div>
         </>
     )   

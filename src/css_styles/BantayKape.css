@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
     border-bottom: 1px solid rgba(75, 78, 76, 0.2);
     box-shadow: 1px 1px 5px rgba(75, 78, 76, 0.5);
 }
@@ -109,6 +109,28 @@
     cursor: pointer; /* Added cursor pointer for better UX */
 }
 
+.description-section-container {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    padding: 3%;
+}
+
+.bantaykape-description {
+    width: 500px;
+    height: 500px;
+    border-radius: 29% 71% 72% 28% / 28% 22% 78% 72%;
+    background-color: #144600;
+}
+
+.about-bantaykape-title {
+    font-size: 4vw;
+
+}
+.bantaykape-description-logo {
+    width: 400px;
+    height: 400px;
+}
 
 
 /*

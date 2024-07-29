@@ -3,13 +3,14 @@ import '../css_styles/BantayKape.css';
 import BantayKapeInfo from './BantayKapeInfo';
 import BantayKapeIntroSection from './IntroSection';
 
+import DescriptionSection from './DescriptionSection';
 const BantayKapeHeader = () => {
     return (
         <>
             <header className='bantaykape-header'>
                 <nav className='bantaykape-nav'>
                     <div className='bantaykape-brand-container'>
-                        <img src={BantayKapeInfo.logo} alt='BantayKape Logo' className='bantaykape-img'/>
+                        <img src={BantayKapeInfo.logo[0]} alt='BantayKape Logo' className='bantaykape-img'/>
                     </div>
                     
                     <div className='bantaykape-navigation-container'>
@@ -29,6 +30,8 @@ const BantayKapeHeader = () => {
                 </nav>
 
                 <BantayKapeIntroSection />
+
+                
             </header>
         </>
         
